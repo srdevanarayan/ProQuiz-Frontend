@@ -413,7 +413,7 @@ const Contributor = () => {
                     border: "2px solid rgb(98, 11, 169)",
                     padding: "10px",
                     fontFamily: "Montserrat, sans-serif",
-                    lineHeight: "150px",
+                    lineHeight: "80px",
                   }}
                   placeholder="Question"
                   type="text"
