@@ -1,0 +1,253 @@
+.qmakercontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.sidepanel {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  justify-content: flex-start;
+  overflow: auto;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: 2px solid rgb(98, 11, 169);
+}
+
+.createquizwindow {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  background-color: #857cec;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(148, 59, 222, 0.5),
+    rgba(187, 132, 232, 0.75),
+    rgba(157, 55, 240, 0.5)
+  );
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.quiztab {
+  background-color: rgba(187, 132, 232, 0.75);
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.quizstats {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.quizbuttons {
+  display: flex;
+  flex-direction: column;
+}
+.quizbuttons button {
+  cursor: pointer;
+}
+
+.quizstatus {
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 3px 10px;
+  width: fit-content;
+}
+
+.quizdetails {
+  overflow: auto;
+}
+
+.quizdetails .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.quizdetails .quizdetailsrest {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.quizdetailscol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.quizdetailsquestions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.quizdetailsquestionsoptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.quizdetailsquestionsansweroption {
+  border: 2px solid green;
+}
+
+.addqbquestions {
+  width: 100%;
+  height: calc(100% - 46px);
+  bottom: 0;
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #857cec;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(148, 59, 222, 0.5),
+    rgba(187, 132, 232, 0.75),
+    rgba(157, 55, 240, 0.5)
+  );
+  overflow: auto;
+}
+
+.filterButtonGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+.filterButtonGroup button:not(.selectedButton) {
+  border-radius: 10px;
+  padding: 5px 15px;
+  background: rgb(98, 11, 169);
+  border: 2px solid rgb(98, 11, 169);
+  color: white;
+}
+
+.filterButtonGroup button:hover {
+  color: rgb(98, 11, 169);
+  background-color: white;
+}
+.selectedButton {
+  border-radius: 10px;
+  padding: 5px 11px;
+  background-color: rgba(98, 11, 169, 0.5);
+  border: 2px solid rgb(98, 11, 169);
+  color: white;
+}
+
+.quizbuttons button {
+  padding: 4px;
+  margin-bottom: 3px;
+  background-color: rgb(98, 11, 169);
+  color: white;
+  border: 2px solid rgb(98, 11, 169);
+  transition: 0.3s;
+  border-radius: 20px;
+}
+.quizbuttons button:hover {
+  color: rgb(98, 11, 169);
+  background-color: white;
+}
+
+.quizdetailsindividualquestions {
+  background-color: rgb(201, 149, 244);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.quizdetailsindividualquestionsp {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.quizdetailsquestionsoptions p {
+  font-size: 19px;
+  border: 2px solid rgb(98, 11, 169);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.quizdetailsquestionsansweroption {
+  background-color: rgb(31, 164, 31);
+}
+
+.quizdetailsquestions {
+  margin-top: 10px;
+}
+.quizdetails {
+  overflow: auto;
+}
+
+.createquiztitle {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.createquizwindow label {
+  font-size: 20px;
+}
+
+.createquizwindow input {
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  border: 2px solid rgb(98, 11, 169);
+  padding: 5px;
+  margin-left: 9px;
+}
+.createquizwindow button {
+  padding: 5px 10px;
+  background-color: rgb(98, 11, 169);
+  border: 2px solid rgb(98, 11, 169);
+  transition: 0.3s;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.createquizwindow button:hover:not([disabled]) {
+  background-color: white;
+  color: rgb(98, 11, 169);
+}
+
+.createquizwindow button[disabled] {
+  background-color: grey;
+}
+
+.createquizform {
+  display: flex;
+  flex-direction: column;
+}
+
+.optionsrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.optionsrow input[type="text"] {
+  width: 200px;
+  height: 40px;
+}

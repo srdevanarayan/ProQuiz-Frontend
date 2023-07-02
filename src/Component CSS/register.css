@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #000;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../Logos/logo-no-background-black.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 191px;
+  margin-top: 0.8rem;
+  margin-left: 0.8rem;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #857cec;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(148, 59, 222, 0.5),
+    rgba(187, 132, 232, 0.75),
+    rgba(157, 55, 240, 0.5)
+  );
+  font-family: "Montserrat", sans-serif;
+
+  /* background-image: linear-gradient(to bottom right, #5d47cd, #9090e0, #7979ec); */
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.registersection {
+  width: 100%;
+  max-width: 420px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: rgba(236, 213, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0px -3px 15px rgba(0, 0, 0, 0.25);
+}
+
+.registerform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+a,
+a:visited {
+  color: #252222;
+}
+a:hover {
+  color: #000;
+}
+
+.registerform input[type="text"],
+.registerform input[type="number"],
+.registerform input[type="password"],
+.registerform button,
+.registerform textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background: #f1f1f1;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  margin-bottom: 0.75rem;
+}
+.registerform input:focus {
+  outline: none;
+  background: white;
+}
+
+.registerform button {
+  border: none;
+  cursor: pointer;
+}
+.registerform input::placeholder {
+  font-size: 0.75em;
+  color: #000;
+}
+
+.registerform label,
+.registerform button {
+  margin-top: 1rem;
+}
+
+.registerform button {
+  padding: 0.5rem;
+  background: #000;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.registerform button:hover {
+  padding: 0.5rem;
+  background: rgb(98, 11, 169);
+  color: #fff;
+}
+.registerform button:disabled {
+  background: #1e1c1ca8;
+  color: #b4b49b;
+}
+
+.instructions {
+  font-size: 0.65rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -2px;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  border: none;
+}
+
+.invalid {
+  border: 2px solid red;
+  box-shadow: 0px 5px 4px rgba(255, 0, 0, 0.25);
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0rem;
+  border-radius: 20px;
+  font-size: 15px;
+}
+.sucmsg {
+  background-color: rgba(27, 212, 54, 0.771);
+  color: rgb(5, 86, 5);
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0rem;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.line {
+  display: inline-block;
+}
+.othertext {
+  font-size: 0.7rem;
+}
+
+.registersection h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+.registersection center {
+  margin-top: 0px;
+}
+
+.navbuttons {
+  padding: 0, 10px;
+  margin: 0 10px;
+}

@@ -1,0 +1,125 @@
+.contributorcontainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contributorsidepanel {
+  height: 100%;
+  background-color: whitesmoke;
+  width: 400px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid rgb(98, 11, 169);
+  padding: 10px;
+}
+
+.contributersidepanelblocks {
+  width: 100%;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.contributersidepanelblockscol {
+  display: flex;
+  flex-direction: row;
+}
+
+.contributormainscreen {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #857cec;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(148, 59, 222, 0.5),
+    rgba(187, 132, 232, 0.75),
+    rgba(157, 55, 240, 0.5)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.contributoraddquestion {
+  width: 100%;
+  height: 100%;
+}
+
+.contbuttons {
+  padding: 5px;
+  background-color: rgb(98, 11, 169);
+  border-radius: 30px;
+  border: 2px solid rgb(98, 11, 169);
+  transition: 0.3s;
+  color: white;
+
+  margin-left: 5px;
+}
+
+.contbuttons:hover {
+  color: rgb(98, 11, 169);
+  background-color: white;
+}
+.contributormainscreen {
+  padding-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.contributormainscreen select {
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: 2px solid rgb(98, 11, 169);
+  margin-right: 15px;
+  margin-left: 15px;
+  background-color: rgb(98, 11, 169);
+  color: white;
+}
+
+.contributormainscreen select option {
+  background-color: white;
+  color: rgb(98, 11, 169);
+}
+.contributormainscreen select option:hover {
+  background-color: rgb(150, 50, 233);
+}
+
+.contributormainscreen input {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(98, 11, 169);
+  margin-left: 5px;
+}
+
+.contributormainscreen button {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(98, 11, 169);
+  color: white;
+  border-radius: 30px;
+  border: 2px solid rgb(98, 11, 169);
+  transition: 0.3s;
+}
+.contributormainscreen button:hover:not([disabled]) {
+  background-color: white;
+  color: rgb(98, 11, 169);
+}
+.contributormainscreen button[disabled] {
+  opacity: 0.5;
+}
+input[type="radio"]:checked:after {
+  background-color: rgb(98, 11, 169);
+
+  border: 2px solid white;
+}

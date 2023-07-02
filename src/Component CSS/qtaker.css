@@ -1,0 +1,234 @@
+.qtakercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding-top: 46px;
+}
+
+.qtakersidepanel1 {
+  height: 100%;
+  width: 300px;
+  background-color: whitesmoke;
+  justify-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 5px;
+  border-right: 2px solid rgb(98, 11, 169);
+}
+.qtakersidepanel2 {
+  height: 100%;
+  width: 300px;
+  background-color: whitesmoke;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 5px;
+  border-left: 2px solid rgb(98, 11, 169);
+}
+.qtakermain {
+  width: 100%;
+  height: 100%;
+  background-color: #857cec;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(148, 59, 222, 0.5),
+    rgba(187, 132, 232, 0.75),
+    rgba(157, 55, 240, 0.5)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qtakermainbuttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quizdetailsfromcode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quiztakerquiztab {
+  width: 100%;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid red;
+}
+
+.quizsessionwindow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #857cec;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(148, 59, 222, 0.5),
+    rgba(187, 132, 232, 0.75),
+    rgba(157, 55, 240, 0.5)
+  );
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  overflow: auto;
+}
+
+.quizsessionheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 50%;
+}
+
+.questionoptionwindow {
+  align-self: center;
+  width: 90%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  height: min(60%);
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.optgrp button {
+  font-size: 28px;
+  padding: 10px;
+  margin: 10px;
+  height: 100px;
+  width: 50%;
+  background-color: rgb(98, 11, 169);
+  color: white;
+  border-radius: 20px;
+  transition: 0.3s;
+  border: 2px solid rgb(98, 11, 169);
+}
+
+.optgrp button:hover {
+  color: rgb(98, 11, 169);
+  background-color: white;
+}
+
+.optgrp {
+  display: flex;
+  flex-direction: row;
+}
+
+.questionoptionwindow p {
+  font-size: 28px;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.questionoptionwindow .disabled {
+  background-color: grey;
+}
+
+.quizsessionendquiz {
+  padding: 20px;
+  width: 30%;
+  margin-top: 15px;
+  margin-left: 35%;
+  border-radius: 30px;
+  background-color: rgb(148, 19, 19);
+  border: 2px solid rgb(148, 19, 19);
+  color: white;
+  transition: 0.3s;
+  font-size: 25px;
+}
+
+.quizsessionendquiz:hover {
+  color: rgb(148, 19, 19);
+  background-color: white;
+}
+
+.quiztakerquiztab {
+  background-color: rgba(187, 132, 232, 0.75);
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+.qtakerbut {
+  padding: 5px 10px;
+  background-color: rgb(98, 11, 169);
+  border: 2px solid rgb(98, 11, 169);
+  transition: 0.3s;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.qtakerbut:hover:not([disabled]) {
+  background-color: white;
+  color: rgb(98, 11, 169);
+}
+.qtakerbut[disabled] {
+  opacity: 0.5;
+}
+
+.qtakerquizcode {
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(98, 11, 169);
+  margin-bottom: 20px;
+}
+
+.generalquizrequest label {
+  font-size: 17px;
+}
+.generalquizrequest input {
+  padding: 5px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+.generalquizrequest select {
+  padding: 5px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+
+.qtakerresponse {
+  overflow: auto;
+}
+.qtakerresponse p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.responseindividual {
+  border-bottom: 2px dashed rgb(98, 11, 169);
+  padding: 5px;
+  margin: 5px;
+}
+
+.quizdetailsfromcode {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
+}
+.quizdetailsfromcode p {
+  font-size: 19px;
+  margin-bottom: 5px;
+}

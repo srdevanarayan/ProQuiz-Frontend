@@ -1,0 +1,72 @@
+.responsecontainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.responsesidepanel {
+  height: 100%;
+  width: 300px;
+  background-color: whitesmoke;
+  padding: 5px;
+  border-right: 2px solid rgb(98, 11, 169);
+  overflow: auto;
+}
+
+.responsetab {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(187, 132, 232, 0.75);
+  border: 3px solid rgba(187, 132, 232, 0.75);
+  width: 100%;
+  justify-content: space-around;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.responsetab:hover {
+  border: 3px solid rgb(98, 11, 169);
+}
+
+.responsewindow {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: calc(100% - 300px);
+  height: 100%;
+  padding: 10px;
+}
+
+.questionsandanswers {
+  width: 100%;
+
+  border-bottom: 2px dashed rgb(98, 11, 169);
+  padding: 20px;
+}
+
+.pflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pflex p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.checkicon {
+  color: rgb(5, 127, 5);
+  margin-right: 5px;
+}
+.crossicon {
+  color: rgb(161, 12, 12);
+  margin-right: 5px;
+}

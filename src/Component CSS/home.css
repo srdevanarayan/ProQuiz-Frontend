@@ -1,0 +1,87 @@
+.Home {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  background-image: url("../images/bg.png");
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.Home-list {
+  margin-top: 20px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Home-signinButton,
+.Home-signupButton {
+  font-family: "Montserrat", sans-serif;
+  height: 50px;
+  width: 150px;
+  border-radius: 30px;
+  padding: 0.25rem 0.25rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  background-color: rgb(98, 11, 169);
+  cursor: pointer;
+  color: white;
+  box-shadow: 0px 0px 15px rgb(98, 11, 169);
+  border: 0cm;
+  opacity: 0;
+  transform: translateY(70%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.Home-signinButton:hover,
+.Home-signupButton:hover {
+  background-color: white;
+  color: rgb(98, 11, 169);
+  transition: 0.3s;
+}
+
+.homelogo {
+  background-image: url("../Logos/shadow-logo-no-background-white.png");
+  width: 650px;
+  height: 124px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.homelogo.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.homep {
+  opacity: 0;
+  transform: translateY(70%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+}
+.homep.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.Home-signinButton.show,
+.Home-signupButton.show {
+  opacity: 1;
+  transform: translateY(0);
+}

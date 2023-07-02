@@ -1,0 +1,57 @@
+.ValidatorScreen {
+  padding-top: 46px;
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  height: 100%;
+}
+
+.validatorsidepanel {
+  width: 400px;
+  height: 100%;
+  background-color: whitesmoke;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid rgb(98, 11, 169);
+}
+
+.qbcontainer {
+  width: 100%;
+}
+
+.refresh {
+  color: rgb(98, 11, 169);
+  transition: 0.3s;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.refresh:hover {
+  color: rgb(151, 48, 235);
+}
+
+.contributersidepanelblocks {
+  border-radius: 20px;
+  background-color: rgba(187, 132, 232, 0.75);
+  border: none;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.unverifybutton {
+  background-color: rgb(98, 11, 169);
+  padding: 5px;
+  font-size: 13px;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid rgb(98, 11, 169);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.unverifybutton:hover {
+  background-color: white;
+  color: rgb(98, 11, 169);
+}
