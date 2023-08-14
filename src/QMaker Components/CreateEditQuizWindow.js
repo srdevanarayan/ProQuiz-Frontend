@@ -409,6 +409,7 @@ const CreateEditQuizWindow = ({
             <label style={{ width: "100%" }}>
               <textarea
                 style={{
+                  minWidth: "500px",
                   width: "100%",
                   height: "50px",
                   textAlign: "center",
@@ -468,7 +469,7 @@ const CreateEditQuizWindow = ({
               </label>
             </div>
             <br />
-            <div className="optionsrow">
+            <div className="optionsrow" style={{ width: "100%" }}>
               <label>
                 <input
                   type="radio"

@@ -170,8 +170,8 @@ const IndividualQuestions = ({
         <div className="qbquestionattributes">
           <center>
             <div title="Rating" style={{ marginBottom: "10px" }}>
-              <FontAwesomeIcon icon={faStar} /> {ratingState} ({ratedUsersState}
-              )
+              <FontAwesomeIcon icon={faStar} /> {Math.round(ratingState)} (
+              {ratedUsersState})
             </div>
 
             <div title="Verified" style={{ marginBottom: "10px" }}>

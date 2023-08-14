@@ -400,7 +400,7 @@ const Contributor = () => {
                 alignItems: "center",
               }}
             >
-              <label>
+              <label style={{ width: "100%" }}>
                 <br />
 
                 <textarea
@@ -413,7 +413,6 @@ const Contributor = () => {
                     border: "2px solid rgb(98, 11, 169)",
                     padding: "10px",
                     fontFamily: "Montserrat, sans-serif",
-                    lineHeight: "80px",
                   }}
                   placeholder="Question"
                   type="text"
