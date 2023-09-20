@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+# ProQuiz - A Comprehensive Quiz Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![ProQuiz Logo](https://drive.google.com/uc?export=view&id=1co-rWPuhOA0NZBiA1uUbQIefo-KEvAZF)
 
-## Available Scripts
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Key Features](#key-features)
+3. [Technologies Used](#technologies-used)
+4. [Usage](#usage)
+5. [Screenshots](#screenshots)
+6. [Future Enhancements](#future-enhancements)
 
-In the project directory, you can run:
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Introduction
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Welcome to ProQuiz, a powerful quiz web application developed using the MERN stack. ProQuiz was created in just 1.5 months while I was learning the stack's technologies. This project showcases my dedication to mastering these technologies and my commitment to delivering a feature-rich and user-friendly application.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Key Features
 
-### `npm run build`
+### User Authentication
+- Secure user sign-in and registration forms with comprehensive form validation.
+- OTP (One-Time Password) verification for added security.
+- Password change functionality for registered users.
+- Authentication tokens stored in memory for enhanced security, and refresh tokens to automatically refresh user session for seamless experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Custom Frontend
+- A fully custom frontend, built from scratch without relying on templates, ensuring a unique and engaging user experience.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### User Roles
+- ProQuiz supports five distinct user roles:
+  1. Quiz Maker
+  2. Quiz Taker
+  3. Question Validator
+  4. Question Contributor
+  5. Question Bank Viewer
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Extensive Question Bank
+- A comprehensive question bank featuring questions organized by categories and subcategories.
+- Sort questions by rating, validated count, difficulty level, date created, and more.
 
-### `npm run eject`
+### User Contribution
+- Users can add, edit, and delete questions within the question bank.
+- A select group of users, known as question validators, have the authority to validate questions they deem correct.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Quiz Creation
+- Quiz makers can effortlessly create quizzes using questions from the question bank and their own questions.
+- Customize quizzes by setting time limits and approval requirements for participants.
+- Quiz makers can copy, edit and delete their quizzes, with options to start and end quiz sessions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Participant Management
+- Quiz makers have the ability to accept, block, or reject participant requests to join a quiz.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Quiz Results
+- After a quiz, quiz makers can view scores of participants and their individual responses.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Quiz Taking
+- Quiz takers can create their own quizzes (general quizzes) using questions from question bank by specifying categories, subcategories, and other filters.
+- Participate in custom quizzes created by other quiz makers by entering quiz codes (and requesting for approval if needed) and view their answers along with the correct ones.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Frontend:**
+  - React
+  - HTML5
+  - CSS3
+  - JavaScript
 
-### Code Splitting
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Authentication:**
+  - OTP Verification
+  - Sign in using username and password
+  - JSON Web Tokens (JWT) for authentication and refresh tokens
 
-### Analyzing the Bundle Size
+- **Other Tools:**
+  - REST APIs
+  - Git and GitHub for version control
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Usage
 
-### Advanced Configuration
+1. Sign in or register to access the full range of features based on your user role.
+2. Explore and contribute to the extensive question bank.
+3. Create your own quizzes or participate in existing ones.
+4. Manage participant requests and view quiz results.
+5. Enjoy a seamless and engaging quiz experience!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- Include screenshots of your application here -->
+| ![Homepage](https://drive.google.com/uc?export=view&id=1KWYpfHUXOXiijOSjkrSi717PzKgEVq7N) | ![User Registration](https://drive.google.com/uc?export=view&id=1Zn07UlTP_DMs0o-vvF-NFruMI3-5bHIS) |
+|:--:|:--:|
+| **Homepage** | **User Registration** |
 
-### `npm run build` fails to minify
+| ![User Login](https://drive.google.com/uc?export=view&id=1nrtwAnf7PMgG34Rw4sdFZWTeMr1PZSAq) | ![Dashboard](https://drive.google.com/uc?export=view&id=1kGMZR_EMtEJ71RYeFlxXgfK3VIkqJEWj) |
+|:--:|:--:|
+| **User Login** | **Dashboard** |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| ![Quiz Maker Screen](https://drive.google.com/uc?export=view&id=1Fn52yknuz48VOdxW01YyouOX50hh-bLQ) | ![Quiz Taker Screen](https://drive.google.com/uc?export=view&id=1vmmHAdvYvtAl3LT4NIhIQTwEAj_pk86R) |
+|:--:|:--:|
+| **Quiz Maker Screen** | **Quiz Taker Screen** |
+
+| ![Quiz Session](https://drive.google.com/uc?export=view&id=1fxGW35IM-lEn6QuJntRJjKcAOfLVPo-w) | ![Quiz Taker Result Screen](https://drive.google.com/uc?export=view&id=1oQwo-oNr2ynEREII01KWMs634luvA_UX) |
+|:--:|:--:|
+| **Quiz Session** | **Quiz Taker Result Screen** |
+
+| ![Question Contributor Screen](https://drive.google.com/uc?export=view&id=1aWTyHC9HqMZEL-ZKKtVcYvE2RW2nq3Nj) | ![Question Validator Screen](https://drive.google.com/uc?export=view&id=1_Gy7EAVBjb2OMRMGl5cFHv2EHHI_iQoK) |
+|:--:|:--:|
+| **Question Contributor Screen** | **Question Validator Screen** |
+
+| ![Question Bank Viewer Screen](https://drive.google.com/uc?export=view&id=1yiQ-kG7CBilNsQRBpDmpoDY6srCO1Ui8) | |
+|:--:|:--:|
+| **Question Bank Viewer Screen** | |
+
+
+---
+
+## Future Enhancements
+
+In the future, ProQuiz will receive additional enhancements, including:
+
+- **Spreadsheet Integration:** Allow users to upload questions from spreadsheets.
+- **Results Export:** Enable users to download quiz results as spreadsheets.
+- **And More:** Continuously improve and expand ProQuiz's features and capabilities.
+
+---
+
+Thank you for exploring ProQuiz, and I hope you find it both useful and enjoyable!
